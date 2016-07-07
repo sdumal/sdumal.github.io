@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../pic/background2.png);
+}
+
+.wrapper {
+    height: 940px;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom: 3px solid #031D28;
+    box-shadow: 0 0 10px 6px #084E6A;
+}
+
+.topheader {
+    padding: 11px 40px 0;
+    background-color: white;
+}
+
+.topHeader .logo {
+    float: left;
+    position: relative;
+}
+
+.topHeader span {
+    position: absolute;
+    left: 260px;
+    top: 110px;
+    color: #128aa7;
+    font-family: Tahoma;
+}
+
+.topHeader .contacts {
+    float: right;
+    display: block;
+    font-family: Tahoma;
+    color: rgba(18, 138, 167, 0.8);
+}
+
+.topHeader .countries {
+    clear: right;
+    float: right;
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+.topHeader .countries a {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    text-decoration: #128aa7;
+}
+
+.topHeader .titlePhoto {
+    background-image: url(../pic/blueLines.png);
+}
+
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+}
+.navigationMenu {
+    display: block;
+    width: 100%;
+    height: 34px;
+    background: #323232;
+    border-bottom: 1px solid black;
+}
+
+.navigationMenu li {
+    width: 14.28%;
+    line-height: 34px;
+    text-align: center;
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+.navigationMenu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navigationMenu li .subMenu {
+    display: none;
+    position: absolute;
+}
+
+.navigationMenu li .subMenu li {
+    float: none;
+    display: block;
+    width: 140px;
+    background: #303030;
+    color: white;
+}
+
+.navigationMenu li:hover .subMenu {
+    display: block;
+}
+
+.info {
+    background: #ddd;
+    float: left;
+    width: 20%;
+    height: 2000px;
+    text-align: center;
+    border-left: 1px solid #C7CACF;
+    border-right: 1px solid #C7CACF;
+}
+
+.news {
+    background: #ddd;
+    float: right;
+    width: 20%;
+    height: 2000px;
+    text-align: center;
+    border-left: 1px solid #C7CACF;
+    border-right: 1px solid #C7CACF;
+}
+
+.content {
+    background: white;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Tahoma;
+    font-size: 12px;
+}
