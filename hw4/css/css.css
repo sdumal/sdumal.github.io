@@ -28,7 +28,7 @@ body {
 
 .topHeader span {
     position: absolute;
-    left: 260px;
+    left: 220px;
     top: 110px;
     color: #128aa7;
     font-family: Tahoma;
@@ -45,7 +45,7 @@ body {
     clear: right;
     float: right;
     font-size: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .topHeader .countries a {
