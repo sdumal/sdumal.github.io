@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-family: HelveticaNeueCyr, tahoma, serif;
+}
+
+body {
+    background-image: url(../pic/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+nav {
+    line-height: 45px;
+    background-color: #074C8A;
+    display: flex;
+    justify-content: flex-end;
+    color: #60B5ED;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    height: 100%;
+    color: #60B5ED;
+    text-decoration: none;
+
+}
+
+a:hover {
+    background-color: #4EABDA;
+    color: white;
+}
+
+span {
+    display: inline-block;
+    width: 12em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ola {
+    color: white;
+    background: linear-gradient(to top, #4299D2, #51B1DC);
+}
+
+.verticalLine {
+    height: 80%;
+    margin-top: 7px;
+}
+
+span img {
+    margin-right: 10px;
+}
+
+.wrapper {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    height: 450px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.login .loginHead {
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.login form p {
+    margin: 10px auto 0;
+}
+
+.login form input[type=text],
+.login form input[type=email],
+.login form input[type=password] {
+    height: 28px;
+    width: 262px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-indent: 15px;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+    font-family: HelveticaNeueCyr, tahoma, serif;
+}
+
+.login form input:focus {
+    background-color: #1B5288;
+    box-shadow: 0px 0px 2px 2px #5555FF;
+}
+
+input[type=image] {
+    width: 75%;
+    margin-top: 15px;
+}
+
+input[type=checkbox] {
+    margin: 10px 10px 0 0;
+}
+
+input[type=submit] {
+    height: 28px;
+    width: 220px;
+    background: linear-gradient(to top, #3686CA, #4EABDA);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+}
+
+.help {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 60%;
+}
