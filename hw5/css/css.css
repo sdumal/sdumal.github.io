@@ -76,6 +76,26 @@ span img {
     align-items: center;
 }
 
+.ou {
+    width: 100%;
+    line-height: 100%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    position: relative;
+    width: 40%;
+    border-bottom: 2px solid black;
+}
+
+.name {
+  width: 40px;
+  text-align: center;
+}
+
 .login {
     height: 450px;
     width: 350px;
