@@ -79,7 +79,7 @@ span img {
 .ou {
     width: 100%;
     line-height: 100%;
-    background: green;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,12 +87,12 @@ span img {
 
 .line {
     position: relative;
-    width: 40%;
-    border-bottom: 2px solid black;
+    width: 30%;
+    border-bottom: 1px solid white;
 }
 
 .name {
-  width: 40px;
+  width: 5%;
   text-align: center;
 }
 
