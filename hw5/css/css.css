@@ -87,12 +87,12 @@ span img {
 
 .line {
     position: relative;
-    width: 32%;
+    width: 35%;
     border-bottom: 1px solid white;
 }
 
 .name {
-  width: 10%;
+  width: 20%;
   text-align: center;
 }
 
