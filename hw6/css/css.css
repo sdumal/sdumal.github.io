@@ -213,7 +213,7 @@ header {
 
 .search .search_auto content label {
     color: #154468;
-    font: 400 10px / 28px Arial;
+    font: 700 10px / 28px Arial;
     width: 71px;
     line-height: 100%;
 }
@@ -258,7 +258,7 @@ header {
 
 .search .search_tyre ul label {
     color: #000000;
-    font: 400 10px 'Lucida Sans Unicode';
+    font: 600 10px 'Lucida Sans Unicode';
 }
 
 .search .search_tyre ul select {
@@ -289,7 +289,26 @@ header {
 }
 
 .search .search_tyre .season input {
+    display: none;
+}
+
+.search .search_tyre .season input + label {
+    display: inline-block;
+    height: 11px;
     width: 11px;
+    border: inset 1px solid #888;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #aaa;
+}
+
+.search .search_tyre .season input:checked + label {
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    border: inset 1px solid 888;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #111;
+    background-color: #555;
 }
 
 .search .search_tyre .search_link {
@@ -536,7 +555,29 @@ main figure .price {
 }
 
 .right_bar li input {
-    margin: 0 20px 0 -22px;
+    display: none;
+}
+
+.right_bar li input + label {
+    display: inline-block;
+    margin: 0 15px -2px -22px;
+    height: 11px;
+    width: 11px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #aaa;
+    line-height: 28px;
+}
+
+.right_bar li input:checked + label {
+    display: inline-block;
+    margin: 0 15px -2px -22px;
+    height: 11px;
+    width: 11px;
+    border: 1px solid 888;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #111;
+    background-color: #555;
 }
 
 .right_bar button {
