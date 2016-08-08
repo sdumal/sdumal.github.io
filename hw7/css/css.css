@@ -339,7 +339,8 @@ body {
     .content__updatesPS {
         color: #454545;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;        
     }
     
     .content__logos {
@@ -831,7 +832,8 @@ body {
     .content__updatesPS {
         color: #454545;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;  
     }
     
     .content__logos {
@@ -1404,7 +1406,8 @@ body {
     .content__updatesPS {
         color: #454545;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;  
     }
     
     .content__logos {
@@ -1909,7 +1912,8 @@ body {
     .content__updatesPS {
         color: #454545;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;  
     }
     
     .content__logos {
