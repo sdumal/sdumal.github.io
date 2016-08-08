@@ -180,7 +180,7 @@ body {
     }
         
     .content {
-        background: linear-gradient(to bottom, #603771, #1f0e26);
+        background: linear-gradient(to bottom, #765284, #12191f);
         height: 340px;        
     }
     
@@ -219,7 +219,12 @@ body {
     .content__aboutPS {
         color: #ffffff;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;
+    }
+    
+    .content__aboutPS:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
     }
     
     .content__secondPart {
@@ -354,7 +359,7 @@ body {
     }
     
     .sprite {
-        background-image: url(../img/logoSprite.png);
+        background-image: url(../img/logos.png);
     }
     
     .logo1 {
@@ -366,39 +371,38 @@ body {
     
      .logo2 {
         display: inline-block;
-        width: 70px;
+        width: 74px;
         height: 64px;
-        background-position: -80px 0;
+        background-position: -133px 0;
     }
     
     .logo3 {
         display: inline-block;
         width: 65px;
         height: 64px;
-        background-position: -160px 0;
+        background-position: -270px 0;
     }
  
     .logo4 {
         display: inline-block;
         width: 55px;
         height: 64px;
-        background-position: -235px 0;
+        background-position: -410px 0;
     }
     
     .logo5 {
         display: inline-block;
         width: 102px;
         height: 64px;
-        background-position: -300px 0;
+        background-position: -528px 0;
     }
     
     .logo6 {
         display: inline-block;
         width: 81px;
         height: 64px;
-        background-position: -412px 0;
+        background-position: -694px 0;
     }
-    
     
     .footerTop {
         height: 395px;
@@ -439,12 +443,12 @@ body {
     .footerTop__H3 {
         color: #c5c5c5;
         font: italic 16px Georgian;
-        margin: 15px 0;
+        margin: 14px 0;
     }
     
     .footerTop__Text {
         color: #787878;
-        font: 300 16px / 24px OpenSans;
+        font: 300 16px / 23px OpenSans;
     }
     
     footer {
@@ -661,7 +665,7 @@ body {
     }
         
     .content {
-        background: linear-gradient(to bottom, #603771, #1f0e26);
+        background: linear-gradient(to bottom, #765284, #12191f);
         height: 340px;        
     }
     
@@ -701,7 +705,12 @@ body {
     .content__aboutPS {
         color: #ffffff;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;
+    }
+    
+    .content__aboutPS:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
     }
     
     .content__secondPart {
@@ -842,7 +851,7 @@ body {
     }
     
     .sprite {
-        background-image: url(../img/logoSprite.png);
+        background-image: url(../img/logos.png);
     }
     
     .logo1 {
@@ -854,37 +863,37 @@ body {
     
      .logo2 {
         display: inline-block;
-        width: 70px;
+        width: 74px;
         height: 64px;
-        background-position: -80px 0;
+        background-position: -132px 0;
     }
     
     .logo3 {
         display: inline-block;
         width: 65px;
         height: 64px;
-        background-position: -160px 0;
+        background-position: -270px 0;
     }
  
     .logo4 {
         display: inline-block;
         width: 55px;
         height: 64px;
-        background-position: -235px 0;
+        background-position: -410px 0;
     }
     
     .logo5 {
         display: inline-block;
         width: 102px;
         height: 64px;
-        background-position: -300px 0;
+        background-position: -528px 0;
     }
     
     .logo6 {
         display: inline-block;
         width: 81px;
         height: 64px;
-        background-position: -412px 0;
+        background-position: -694px 0;
     }
     
     .footerTop {
@@ -1028,44 +1037,83 @@ body {
     }
 
     .dropDownMenu {
-        font: 400 24px / 33.724px LeagueGothic;
-        text-transform: uppercase;
         text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .dropDownMenu ul {
-        list-style: none;
-    }
-    
-    .dropDownMenu a {
-        text-decoration: none;
-    }
-    
-    .dropDownMenu > ul {
-        text-align: center;
-    }
-    
-    .firstList--border {
-        border: 1px solid black;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        box-sizing: border-box;
-    }
-
-    .firstList .button--home {
         display: block;
         width: 246px;
-        color: #ffffff;
+        margin: 0 auto;
+    }
+        
+    .dropDownMenu__btn {
+        display: block;
+        width: 246px;
+        height: 47px;
         box-sizing: border-box;
+        color: #ffffff;
         font: 400 24px / 45px LeagueGothic;
         text-transform: uppercase;
         background: none;
         border: none;
+        cursor: pointer;
     }
 
+    .dropDownMenu__btn span {
+        border-bottom: 2px solid white;
+        padding: 0 5px;
+    }
+
+    .dropDownMenu__list {
+        display: none;
+        list-style: none;
+    }
+        
 /*    DROPDOWN    */
+
+    .dropDownMenu:hover .dropDownMenu__btn {
+        background-color: rgba(51, 13, 51, 0.8);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .dropDownMenu:hover .dropDownMenu__list {
+        display: block;
+        width: 246px;
+        line-height: 46px;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .dropDownMenu:hover .dropDownMenu__option {
+        background-color: rgba(51, 13, 51, 0.8);
+        border-bottom: 1px solid black;
+        border-top: 1px solid #b183b7;
+        box-sizing: border-box;
+    }
+
+    .dropDownMenu__option--border {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+
+    .dropDownMenu:hover .dropDownMenu__btn:hover {
+        background-color: rgba(16, 4, 16, 0.8);
+    }
+
+    .dropDownMenu:hover .dropDownMenu__option:hover {
+        background-color: rgba(16, 4, 16, 0.8);
+        cursor: pointer;
+    }
+    
+    .dropDownMenu a {
+        text-align: center;
+        color: #ffffff;
+        font: 400 24px / 45px LeagueGothic;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid white;
+       padding: 0 5px;
+    }
+        
+/*    DROPDOWN END    */
     
     .firstList .button--home:active, 
     .firstList .button--home:hover {
@@ -1208,7 +1256,7 @@ body {
 }
         
     .content {
-        background: linear-gradient(to bottom, #603771, #1f0e26);
+        background: linear-gradient(to bottom, #765284, #12191f);
         height: 600px;        
     }
     
@@ -1245,7 +1293,12 @@ body {
     .content__aboutPS {
         color: #ffffff;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;
+    }
+    
+    .content__aboutPS:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
     }
     
     .content__secondPart {
@@ -1371,7 +1424,7 @@ body {
     }
     
     .sprite {
-        background-image: url(../img/logoSprite.png);
+        background-image: url(../img/logos.png);
         margin-bottom: 27px;
     }
     
@@ -1381,29 +1434,29 @@ body {
         height: 64px;
         background-position: 0 0;
         float: left;
-        margin-right: 55px;
+        margin-right: 56px;
     }
     
      .logo2 {
         display: inline-block;
-        width: 70px;
+        width: 73px;
         height: 64px;
-        background-position: -80px 0;
-        margin-right: 55px;
+        background-position: -134px 0;
+        margin-right: 51px;
     }
     
     .logo3 {
         display: inline-block;
         width: 65px;
         height: 64px;
-        background-position: -160px 0;
+        background-position: -270px 0;
     }
  
     .logo4 {
         display: inline-block;
         width: 55px;
         height: 64px;
-        background-position: -235px 0;
+        background-position: -410px 0;
         margin-right: 50px;
         float: left;
     }
@@ -1412,7 +1465,7 @@ body {
         display: inline-block;
         width: 102px;
         height: 64px;
-        background-position: -300px 0;
+        background-position: -528px 0;
         margin-right: 25px;
     }
     
@@ -1420,7 +1473,7 @@ body {
         display: inline-block;
         width: 81px;
         height: 64px;
-        background-position: -412px 0;
+        background-position: -694px 0;
     }
     
     .footerTop {
@@ -1571,92 +1624,86 @@ body {
         display: none;
     }
     
+    
     .dropDownMenu {
-        font: 400 24px / 33.724px LeagueGothic;
-        text-transform: uppercase;
         text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .dropDownMenu ul {
-        list-style: none;
-    }
-    
-    .dropDownMenu a {
-        text-decoration: none;
-    }
-    
-    .dropDownMenu > ul {
-        text-align: center;
-    }
-    
-    .firstList--border {
-        border: 1px solid black;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        box-sizing: border-box;
-    }
-
-    .firstList .button--home {
         display: block;
         width: 246px;
-        color: #ffffff;
+        margin: 0 auto;
+    }
+        
+    .dropDownMenu__btn {
+        display: block;
+        width: 246px;
+        height: 47px;
         box-sizing: border-box;
+        color: #ffffff;
         font: 400 24px / 45px LeagueGothic;
         text-transform: uppercase;
         background: none;
         border: none;
+        cursor: pointer;
     }
 
+    .dropDownMenu__btn span {
+        border-bottom: 2px solid white;
+        padding: 0 5px;
+    }
+
+    .dropDownMenu__list {
+        display: none;
+        list-style: none;
+    }
+        
 /*    DROPDOWN    */
-    
-    .firstList .button--home:active, 
-    .firstList .button--home:hover {
+
+    .dropDownMenu:hover .dropDownMenu__btn {
         background-color: rgba(51, 13, 51, 0.8);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        border-top: 1px solid #b183b7;
-        box-sizing: border-box;
-    }
-    
-    .firstList > button + .secondList {
-        display: none;
     }
 
-    .firstList > button:hover + .secondList {
+    .dropDownMenu:hover .dropDownMenu__list {
         display: block;
         width: 246px;
         line-height: 46px;
-        background-color: rgba(51, 13, 51, 0.8);
         position: absolute;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
+        z-index: 1;
     }
     
-    .firstList > button:hover + .secondList .middleLi {
+    .dropDownMenu:hover .dropDownMenu__option {
+        background-color: rgba(51, 13, 51, 0.8);
         border-bottom: 1px solid black;
         border-top: 1px solid #b183b7;
         box-sizing: border-box;
     }
-    
-    .firstList > button:hover + .secondList .lastLi {
-        border-top: 1px solid #b183b7;
-        box-sizing: border-box;
-    }
-    
-    .textDecor {
-        text-align: center;
-        color: #ffffff;
-        border-bottom: 2px solid white;
-    }
-    
-    .firstList > button:hover + .secondList li:hover {
-        background-color: rgba(29, 8, 29, 0.8);
+
+    .dropDownMenu__option--border {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+}
+
+    .dropDownMenu:hover .dropDownMenu__btn:hover {
+        background-color: rgba(16, 4, 16, 0.8);
     }
 
-/*    DROPDOWN END    */    
+    .dropDownMenu:hover .dropDownMenu__option:hover {
+        background-color: rgba(16, 4, 16, 0.8);
+        cursor: pointer;
+    }
     
+    .dropDownMenu a {
+        text-align: center;
+        color: #ffffff;
+        font: 400 24px / 45px LeagueGothic;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid white;
+       padding: 0 5px;
+    }
+        
+/*    DROPDOWN END    */
+
     .siteHeader__radioButtonBunch {
         width: 65%;
         text-align: right;
@@ -1707,7 +1754,7 @@ body {
     }
         
     .content {
-        background: linear-gradient(to bottom, #603771, #1f0e26);
+        background: linear-gradient(to bottom, #765284, #12191f);
         height: 600px;        
     }
     
@@ -1744,7 +1791,12 @@ body {
     .content__aboutPS {
         color: #ffffff;
         font: 400 18px / 24px LeagueGothic;
-        text-align: right;
+        float: right;
+        text-decoration: none;
+    }
+    
+    .content__aboutPS:hover {
+        text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
     }
     
     .content__secondPart {
@@ -1877,7 +1929,7 @@ body {
     }
     
     .sprite {
-        background-image: url(../img/logoSprite.png);
+        background-image: url(../img/logos.png);
         margin-bottom: 54px;
     }
     
@@ -1887,22 +1939,22 @@ body {
         height: 64px;
         background-position: 0 0;
         float: left;
-        margin-right: 50px;
+        margin-right: 53px;
     }
     
      .logo2 {
         display: inline-block;
-        width: 70px;
+        width: 73px;
         height: 64px;
-        background-position: -80px 0;
+        background-position: -134px 0;
     }
     
     .logo3 {
         display: inline-block;
         width: 65px;
         height: 64px;
-        background-position: -160px 0;
-        margin-right: 50px;
+        background-position: -270px 0;
+        margin-right: 65px;
         float: left;
     }
  
@@ -1910,14 +1962,14 @@ body {
         display: inline-block;
         width: 55px;
         height: 64px;
-        background-position: -235px 0;
+        background-position: -410px 0;
     }
     
     .logo5 {
         display: inline-block;
         width: 102px;
         height: 64px;
-        background-position: -300px 0;
+        background-position: -528px 0;
         margin-right: 10px;
         float: left;
     }
@@ -1926,7 +1978,7 @@ body {
         display: inline-block;
         width: 81px;
         height: 64px;
-        background-position: -412px 0;
+        background-position: -694px 0;
     }
     
     .footerTop {
