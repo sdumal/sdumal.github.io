@@ -28,7 +28,10 @@ body {
         height: 220px;
         padding-top: 55px;
         box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
     
@@ -41,6 +44,7 @@ body {
     }
     
     .siteHeader__logo span {
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
         background: linear-gradient(to top, #432952, #ac23e5);
         -webkit-background-clip: text;
         color: transparent;
@@ -59,7 +63,11 @@ body {
     .siteHeader__menu {
         list-style: none;
         text-align: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -74,8 +82,7 @@ body {
     
     .siteHeader__options a:hover,
     .siteHeader__options a:active {
-        text-decoration: underline;
-        color: #bb50e5;
+        border-bottom: 2px solid #bb50e5;
     }
     
     .siteHeader__options span {
@@ -180,12 +187,17 @@ body {
     }
         
     .content {
+        background: -webkit-linear-gradient(top, #765284, #12191f);
         background: linear-gradient(to bottom, #765284, #12191f);
         height: 340px;        
     }
     
     .content .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding-top: 80px;
         box-sizing: border-box;
@@ -194,7 +206,11 @@ body {
     
     .content__aboutDescription {
         width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -321,7 +337,11 @@ body {
     }
     
     .content__updateInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin-bottom: 20px;
     }
@@ -354,7 +374,11 @@ body {
     .content__logoList {
         list-style: none;
         width: 768px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin: 25px auto;
     }
@@ -409,12 +433,20 @@ body {
         height: 395px;
         background-color: #ececec;
         border-top: 1px solid #d8d8d8;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     
     .container--forFlex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -533,6 +565,7 @@ body {
     }
         
     .siteHeader__logo span {
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
         background: linear-gradient(to top, #432952, #ac23e5);
         -webkit-background-clip: text;
         color: transparent;
@@ -551,7 +584,11 @@ body {
     .siteHeader__menu {
         list-style: none;
         text-align: right;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -666,12 +703,17 @@ body {
     }
         
     .content {
+        background: -webkit-linear-gradient(top, #765284, #12191f);
         background: linear-gradient(to bottom, #765284, #12191f);
         height: 340px;        
     }
     
     .content .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding-top: 80px;
         box-sizing: border-box;
@@ -680,7 +722,11 @@ body {
     
     .content__aboutDescription {
         width: 30%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -812,7 +858,11 @@ body {
     }
     
     .content__updateInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin-bottom: 20px;
     }
@@ -847,7 +897,11 @@ body {
     .content__logoList {
         list-style: none;
         width: 768px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin: 25px auto;
     }
@@ -902,12 +956,20 @@ body {
         height: 395px;
         background-color: #ececec;
         border-top: 1px solid #d8d8d8;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     
     .container--forFlex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -968,7 +1030,11 @@ body {
     .footerNav__menu {
         list-style: none;
         width: 75%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -1029,6 +1095,7 @@ body {
     }
         
     .siteHeader__logo span {
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
         background: linear-gradient(to top, #432952, #ac23e5);
         -webkit-background-clip: text;
         color: transparent;
@@ -1258,6 +1325,7 @@ body {
 }
         
     .content {
+        background: -webkit-linear-gradient(top, #765284, #12191f);
         background: linear-gradient(to bottom, #765284, #12191f);
         height: 600px;        
     }
@@ -1268,7 +1336,11 @@ body {
     }
     
     .content__aboutDescription {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin-top: 28px;
     }
@@ -1385,7 +1457,11 @@ body {
     }
     
     .content__updateInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin-bottom: 20px;
     }
@@ -1560,7 +1636,11 @@ body {
     .footerNav__menu {
         list-style: none;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
     }
     
@@ -1618,6 +1698,7 @@ body {
     }
         
     .siteHeader__logo span {
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
         background: linear-gradient(to top, #432952, #ac23e5);
         -webkit-background-clip: text;
         color: transparent;
@@ -1757,6 +1838,7 @@ body {
     }
         
     .content {
+        background: -webkit-linear-gradient(top, #765284, #12191f);
         background: linear-gradient(to bottom, #765284, #12191f);
         height: 600px;        
     }
@@ -1767,7 +1849,11 @@ body {
     }
     
     .content__aboutDescription {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin-top: 28px;
     }
@@ -1885,7 +1971,11 @@ body {
     }
     
     .content__updateInfo {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         margin-bottom: 20px;
     }
