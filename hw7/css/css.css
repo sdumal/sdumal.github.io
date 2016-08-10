@@ -42,19 +42,19 @@ body {
         text-transform: uppercase;
         text-decoration: none;
     }
- 
+    
     .siteHeader__logo span {
-           color: #432952;
+        color: #432952;
     }
     
     @supports (-webkit-background-clip: text) {            
-        .siteHeader__logo span {
-            background: linear-gradient(to top, #432952, #ac23e5);
-            background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
-            background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+    .siteHeader__logo span {
+        background: linear-gradient(to top, #432952, #ac23e5);
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
+        -webkit-background-clip: text;
+        color: transparent;
+    }
     }    
     
     .dropDownMenu {
@@ -506,7 +506,7 @@ body {
     
     .footerNav {
         display: inline-block;
-        width: 85%;
+        width: 83%;
     }
     
     .footerNav__menu {
@@ -527,7 +527,7 @@ body {
     
     .footerNav__copyright {
         display: inline-block;
-        width: 14%;
+        width: 16%;
         text-align: right;
         color: #ffffff;
         font: 300 12px / 33.724px OpenSans;
@@ -572,11 +572,18 @@ body {
     }
         
     .siteHeader__logo span {
-        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        color: #432952;
+    }
+    
+    @supports (-webkit-background-clip: text) {            
+    .siteHeader__logo span {
         background: linear-gradient(to top, #432952, #ac23e5);
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
         -webkit-background-clip: text;
         color: transparent;
     }
+    }    
     
     .dropDownMenu {
         display: none;
@@ -610,8 +617,7 @@ body {
     
     .siteHeader__options a:hover,
     .siteHeader__options a:active {
-        text-decoration: underline;
-        color: #bb50e5;
+        border-bottom: 2px solid #bb50e5;
     }
     
     .siteHeader__options span {
@@ -1102,11 +1108,18 @@ body {
     }
         
     .siteHeader__logo span {
-        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        color: #432952;
+    }
+    
+    @supports (-webkit-background-clip: text) {            
+    .siteHeader__logo span {
         background: linear-gradient(to top, #432952, #ac23e5);
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
         -webkit-background-clip: text;
         color: transparent;
     }
+    }    
     
     .siteHeader__nav {
         display: none;
@@ -1705,11 +1718,18 @@ body {
     }
         
     .siteHeader__logo span {
-        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        color: #432952;
+    }
+    
+    @supports (-webkit-background-clip: text) {            
+    .siteHeader__logo span {
         background: linear-gradient(to top, #432952, #ac23e5);
+        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+        background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
         -webkit-background-clip: text;
         color: transparent;
     }
+    }    
     
     .siteHeader__nav {
         display: none;
