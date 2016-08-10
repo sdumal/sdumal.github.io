@@ -73,10 +73,12 @@ body {
         list-style: none;
         text-align: right;
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
     
