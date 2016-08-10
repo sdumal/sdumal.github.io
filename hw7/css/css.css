@@ -42,14 +42,20 @@ body {
         text-transform: uppercase;
         text-decoration: none;
     }
-    
+ 
     .siteHeader__logo span {
-        background: linear-gradient(to top, #432952, #ac23e5);
-        background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
-        background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
-        -webkit-background-clip: text;
-        color: transparent;
+           color: #432952;
     }
+    
+    @supports (-webkit-background-clip: text) {            
+        .siteHeader__logo span {
+            background: linear-gradient(to top, #432952, #ac23e5);
+            background: -webkit-linear-gradient(bottom, #432952, #ac23e5);
+            background: -moz-linear-gradient(bottom, #432952, #ac23e5); 
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }    
     
     .dropDownMenu {
         display: none;
