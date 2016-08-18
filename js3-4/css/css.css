@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #aaa;
+}
+
+body {
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 50px auto 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.list--questions {
+    margin-left: 50px;
+    list-style: none;
+}
+
+.list--questions > li {
+    margin-bottom: 20px;
+}
+
+.list--answers {
+    margin-top: 5px;
+}
+
+.list--answers li {
+    list-style: none;
+    display: flex;
+    
+}
+
+.list--answers input {
+    margin-right: 15px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    border: 2px solid black;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
