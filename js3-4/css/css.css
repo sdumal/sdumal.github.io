@@ -30,13 +30,13 @@ body {
 }
 
 .list--answers {
-    margin-top: 5px;
+    margin-top: 5px 0 0 20px;
 }
 
 .list--answers li {
     list-style: none;
     display: flex;
-    
+    vertical-align: middle;
 }
 
 .list--answers input {
