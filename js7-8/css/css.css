@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.tab {
+    margin: 0 5px 10px 0;
+    border: 1px solid #17154b;
+    background-color: #d0c9c9;
+    width: 100px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+p span {
+    display: none;
+}
+
+.active--tab {
+    background-color: #7e5fba;
+    color: white;
+}
