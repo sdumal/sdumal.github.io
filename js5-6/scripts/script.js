@@ -6,6 +6,7 @@ var ms = 0, ss = 0, mn = 0, hr = 0;
 
 var wrapper = document.createElement('div');
 var splitContainer = document.createElement('div');
+var splitPoint = document.createElement('div');
 
 var msec = document.createElement('div');
 var sec = document.createElement('div');
