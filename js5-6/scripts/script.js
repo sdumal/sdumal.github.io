@@ -52,7 +52,7 @@ document.body.appendChild(pause);
 document.body.appendChild(reset);
 document.body.appendChild(split);
 
-document.body.appendChild(splitContainer);
+// document.body.appendChild(splitContainer);
 
 start.onclick = function() { timerID = setInterval(msCount, 10);            
                             pause.classList.toggle("hide"); 
@@ -76,7 +76,7 @@ function msCount() {
             msec.innerHTML = ms;
         }
         
-        ms += 10;
+        ms += 1;
     } else {
         count();
         
