@@ -143,6 +143,7 @@ function resetTimer() {
 
 function splitAction() {
     document.body.appendChild(splitContainer);
+    splitContainer.appendChild(splitPoint);
     
     splitPoint = hour.innerHTML + min.innerHTML + sec.innerHTML + 
                  msec.innerHTML;
