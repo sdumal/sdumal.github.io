@@ -52,6 +52,8 @@ document.body.appendChild(pause);
 document.body.appendChild(reset);
 document.body.appendChild(split);
 
+document.body.appendChild(splitContainer);
+
 start.onclick = function() { timerID = setInterval(msCount, 10);            
                             pause.classList.toggle("hide"); 
                             start.classList.toggle("hide"); };
@@ -74,7 +76,7 @@ function msCount() {
             msec.innerHTML = ms;
         }
         
-        ms++;
+        ms += 10;
     } else {
         count();
         
@@ -87,14 +89,13 @@ function msCount() {
 
 function count() {
     if (ss < 60) {
+        ss++;
       
         if (ss < 10) { 
             sec.innerHTML = '0' + ss + '.';
         } else {
             sec.innerHTML = ss + '.';
         }
-        
-        ss++;
      } else {
         ss = 0;
         sec.innerHTML = '00.';
@@ -142,8 +143,7 @@ function resetTimer() {
 }
 
 function splitAction() {
-    document.body.appendChild(splitContainer);
-    splitContainer.appendChild(splitPoint);
+    // splitContainer.appendChild(splitPoint);
     
     splitPoint = hour.innerHTML + min.innerHTML + sec.innerHTML + 
                  msec.innerHTML;
