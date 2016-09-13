@@ -1,3 +1,7 @@
+"use strict";
+
+(function() {
+
 var names = [];
 var user;
 var flag = 0;
@@ -5,6 +9,7 @@ var flag = 0;
 for (var i = 0; i < 5; i++) {
     names[i] = prompt("Введите любое имя");
 }
+
 user = prompt("Введите имя Пользователя");
 
 for (var i = 0; i < 5; i++) {
@@ -19,3 +24,5 @@ if (flag) {
 } else {
     alert("Пользователь не найден");
 }
+
+})();
