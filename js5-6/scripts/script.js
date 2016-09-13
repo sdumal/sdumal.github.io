@@ -1,4 +1,6 @@
-var timerID, splitDiv;
+"use strict";
+
+(var timerID, splitDiv;
 var ms = 0, ss = 0, mn = 0, hr = 0;
 
 var wrapper = document.createElement('div');
@@ -49,10 +51,12 @@ document.body.appendChild(reset);
 document.body.appendChild(split);
 
 start.onclick = function() { timerID = setInterval(msCount, 10);            
-                            pause.classList.toggle("hide"); start.classList.toggle("hide"); };
+                            pause.classList.toggle("hide"); 
+                            start.classList.toggle("hide"); };
 
 pause.onclick = function() { clearInterval(timerID); 
-                            start.classList.toggle("hide"); pause.classList.toggle("hide"); };
+                            start.classList.toggle("hide"); 
+                            pause.classList.toggle("hide"); };
 
 reset.onclick = function() { clearInterval(timerID);
                            resetTimer(); };
@@ -61,27 +65,33 @@ split.onclick = splitAction;
 
 function msCount() {
     if (ms < 100) {
+      
         if (ms < 10) {
             msec.innerHTML = '0' + ms;
         } else {
             msec.innerHTML = ms;
         }
+        
         ms++;
     } else {
         count();
+        
         ms = 0;
         msec.innerHTML = ms;
+        
         msCount();
     }
 }
 
 function count() {
     if (ss < 60) {
+      
         if (ss < 10) { 
             sec.innerHTML = '0' + ss + '.';
         } else {
             sec.innerHTML = ss + '.';
         }
+        
         ss++;
      } else {
         ss = 0;
@@ -98,41 +108,50 @@ function count() {
             mn = 0;
             min.innerHTML = '00:';
             hr++;
+            
             if (hr < 10) {
                 hour.innerHTML = '0' + hr + ':';
             } else {
                 hour.innerHTML = hr + ':';
             }
         }
+        
         count();
      }
 }
 
 function resetTimer() {
     clearSplit();
+    
     msec.innerHTML = '00'; 
     sec.innerHTML = '00.'; 
     min.innerHTML = '00:'; 
     hour.innerHTML = '00:';
+    
     ms = 0;
     ss = 0;
     mn = 0;
     hr = 0;
+    
     if (start.classList.contains("hide")) {
         pause.classList.toggle("hide"); 
-        start.classList.toggle("hide");}                            
+        start.classList.toggle("hide");
+    }                            
 }
 
 function splitAction() {
     document.body.appendChild(splitContainer);
+    
     splitPoint = hour.innerHTML + min.innerHTML + sec.innerHTML + 
-                   msec.innerHTML;
+                 msec.innerHTML;
+                 
     splitDiv = document.createElement('div');
     splitDiv.innerHTML = "split: " + splitPoint;
     splitDiv.classList.add("h5");
+    
     splitContainer.appendChild(splitDiv);
 }
 
 function clearSplit() {
     splitContainer.innerHTML = "";
-}
+} )();
