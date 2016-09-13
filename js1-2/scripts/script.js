@@ -1,3 +1,7 @@
+"use strict";
+
+(function() {
+
 var base = prompt("Введите целое число");
 var extent = prompt("Введите степень для возведения");
 
@@ -15,7 +19,8 @@ function pow(x, y) {
         
         for (var i = 1; i < y; i++) {
             x *= baseNUmber;
-        }        
+        }
+        
         return x;
     } else {
         var baseNUmber = x;
@@ -23,7 +28,8 @@ function pow(x, y) {
         
         for (var i = 1; i < y; i++) {
             x *= baseNUmber;
-        }        
+        }
+        
         return (1 / x);
     }
 }
@@ -35,3 +41,5 @@ function isNumeric(n) {
 function isInteger(n) {
     return (n - Math.round(n) == 0);
 } 
+
+})();
