@@ -1,10 +1,10 @@
 "use strict";
 
-var timerID, splitDiv;
+(var timerID, splitDiv;
 var ms = 0, ss = 0, mn = 0, hr = 0;
 
 var wrapper = document.createElement('div');
-splitContainer = document.createElement('div');
+var splitContainer = document.createElement('div');
 
 var msec = document.createElement('div');
 var sec = document.createElement('div');
@@ -155,3 +155,4 @@ function splitAction() {
 function clearSplit() {
     splitContainer.innerHTML = "";
 }
+)();
