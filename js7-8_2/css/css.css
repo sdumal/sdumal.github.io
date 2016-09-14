@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 50px auto;
+    padding: 5px;
+    border: 2px solid #676363;
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+.forms {
+    border: 1px solid #909d97;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+}
+
+input {
+    display: inline-block;
+    width: 35%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.tip {
+    display: inline-block;
+    width: 40%;
+    padding: 4px;
+    font-size: 0.8em;
+    color: #131231;
+    border: 1px solid #5f7798;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    background-color: #99adef;
+    display: none;
+}
+
+.showHelp {
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
