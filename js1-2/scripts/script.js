@@ -42,4 +42,4 @@ function isInteger(n) {
     return (n - Math.round(n) == 0);
 } 
 
-})();
+})(window);
