@@ -60,4 +60,4 @@ testPage.addHeader('h3', "Тест по программированию", 'head
 testPage.addListQuestions("Question №", 3, "list--questions", "Answer №", 4, "list--answers");
 testPage.addButton("Check results", 'button');
 
-})();
+})(window);
