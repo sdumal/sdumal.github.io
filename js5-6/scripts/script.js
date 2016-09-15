@@ -158,4 +158,4 @@ function splitAction() {
 function clearSplit() {
     splitContainer.innerHTML = "";
 }
-})();
+})(window);
