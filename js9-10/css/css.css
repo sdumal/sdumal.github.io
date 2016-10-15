@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #1ebeab;    
+}
+
+.menu > ul {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu > ul > li {
+    display: block;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.secondMenu {
+    position: absolute;
+    display: block;
+    background-color: green;
+    width: 140px;
+    line-height: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.firstMenu > li:hover .secondMenu {
+    visibility: visible;
+    background-color: green;
+    width: 140px;
+    height: 160px;
+    line-height: 40px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.thirdMenu {
+    position: absolute;
+    left: 140px;
+    top: 80px;
+    display: block;
+    background-color: red;
+    width: 140px;
+    height: 0;
+    line-height: 40px;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.secondMenu > li:hover .thirdMenu {
+    visibility: visible;
+    width: 140px;
+    height: 120px;
+    background-color: red;
+    text-align: center;
+    line-height: 40px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.wrapper {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jcarouselWrapper {
+    display: inline-block;
+    width: 240px;
+    height: 200px;
+    background-color: #ccd8f0;
+    border: 1px solid #ccd8f0;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jcarousel,
+.jcarousel2,
+.jcarousel3 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+}
+
+.jcarousel-list {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+
+.jcarousel-list li {
+    float: left;
+    left: 0;
+}
+
+.jcarousel-list img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.jcarousel a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.active {
+    display: "";
+}
+
+.disable {
+    display: none;
+}
+
+.jCheckBox, 
+.cssCheckBox {
+    margin: 0 50px;
+}
+
+.jCheckBox--inner {
+    width: 22px;
+    height: 24px;
+    background: url(../img/aeroCheck.png);
+    cursor: pointer;
+}
+
+.jCheckBox--inner [type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.jCh1 {
+    background-position: -24px;
+}
+
+.jCh2 {
+    background-position: -48px;
+}
+
+.jCh3 {
+    background-position: -96px;
+}
+
+.css_check {
+    height: 24px;
+}
+
+.css_check input[type=checkbox] {
+    display:none;
+}
+
+.css_check label {
+    cursor: pointer;
+}
+
+.css_check label:after {
+    content: " ";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/aeroCheck.png) -24px;
+    position: relative;
+}
+
+.css_check input[type=checkbox]:checked + label:after {
+    background-position: -48px;
+}
+
+.css_check input[type=checkbox]:disabled + label:after {
+    background-position: 0;
+}
+
