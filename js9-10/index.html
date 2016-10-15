@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul class="firstMenu">
+            <li>Option 1</li>
+            <li>Option 2 &#9660;
+                <ul class="secondMenu">
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li>Option 3 &#9660;
+                        <ul class="thirdMenu">
+                            <li>Option 1</li>
+                            <li>Option 2</li>
+                            <li>Option 3</li>
+                        </ul>
+                    </li>
+                    <li>Option 4</li>
+                </ul>
+            </li>
+            <li>Option 3</li>
+            <li>Option 4</li>
+            <li>Option 5</li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <select>
+            <option value="jcarousel">Carousel Scroll</option>
+            <option value="jcarousel2">Carousel Vertical</option>
+            <option value="jcarousel3">Carousel Fast</option>
+        </select>
+        <div class="jcarouselWrapper">
+            <div class="jcarousel active">
+                <ul class="jcarousel-list">
+                    <li><img src="img/DSCN1420.JPG" alt=""></li>
+                    <li><img src="img/IMG_1019.JPG" alt=""></li>
+                    <li><img src="img/IMG_1041.JPG" alt=""></li>
+                    <li><img src="img/IMG_1176.JPG" alt=""></li>
+                    <li><img src="img/IMG_1206.JPG" alt=""></li>
+                </ul>
+                <a class="jcarousel-next" href="#"><<<</a>
+                <a class="jcarousel-prev" href="#">>>></a>
+            </div>
+            <div class="jcarousel2 disable">
+                <ul class="jcarousel-list">
+                    <li><img src="img/DSCN1420.JPG" alt=""></li>
+                    <li><img src="img/IMG_1019.JPG" alt=""></li>
+                    <li><img src="img/IMG_1041.JPG" alt=""></li>
+                    <li><img src="img/IMG_1176.JPG" alt=""></li>
+                    <li><img src="img/IMG_1206.JPG" alt=""></li>
+                </ul>
+                <a class="jcarousel-next" href="#"><<<</a>
+                <a class="jcarousel-prev" href="#">>>></a>
+            </div>
+            <div class="jcarousel3 disable">
+            <ul class="jcarousel-list">
+                <li><img src="img/DSCN1420.JPG" alt=""></li>
+                <li><img src="img/IMG_1019.JPG" alt=""></li>
+                <li><img src="img/IMG_1041.JPG" alt=""></li>
+                <li><img src="img/IMG_1176.JPG" alt=""></li>
+                <li><img src="img/IMG_1206.JPG" alt=""></li>
+            </ul>
+            <a class="jcarousel-next" href="#"><<<</a>
+            <a class="jcarousel-prev" href="#">>>></a>
+        </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="jCheckBox">
+            <h4>js Checkbox</h4>
+            <div class="jCheckBox--inner jCh1">
+                <input type="checkbox" name="ch1">
+            </div>
+            <div class="jCheckBox--inner jCh2">
+                <input type="checkbox" name="ch1">
+            </div>
+            <div class="jCheckBox--inner jCh3">
+                <input type="checkbox" name="ch1" disabled>
+            </div>
+        </div>
+        <div class="cssCheckBox">
+            <h4>css Checkbox</h4>
+            <div class="css_check">
+                <input type="checkbox" id="checkbox1">
+                <label for="checkbox1"></label>
+            </div>
+            <div class="css_check">
+                <input type="checkbox" id="checkbox2" checked>
+                <label for="checkbox2"></label>
+            </div>
+            <div class="css_check">
+                <input type="checkbox" id="checkbox3" disabled>
+                <label for="checkbox3"></label>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="scripts/jCouresel.js"></script>
+    <script src="scripts/fancySelect.js"></script>
+    <script src="scripts/jCheckbox.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.1.2.js"   integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8="   crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
